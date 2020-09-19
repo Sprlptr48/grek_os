@@ -16,8 +16,6 @@ jobs:
 
     steps:    
     - uses: actions/checkout@v2
-    -name: Update
-     run: rustup update nightly --force
     - name: Build
       run: cargo build --verbose --target x86_64-unknown.json
     - name: Run tests
