@@ -27,6 +27,6 @@ jobs:
     - name: Build
       run: cargo build --verbose
     - name: Boot Image Setup
-      run: cargo install boootimage --verbose
+      run: cargo install boootimage --verbose --vers 0.10.1
     - name: Create Bin
-      run: cargo bootimage
+      run: cargo bootimage --verbose
