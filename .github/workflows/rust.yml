@@ -21,10 +21,11 @@ jobs:
       with: 
          toolchain: nightly 
          override: true 
-         components: rustfmt, clippy, rust-src
+         components: rustfmt, clippy, rust-src, llvm-tools-preview
 
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose
-    - name: Run tests
-      run: cargo test --verbose
+    - name: Boot Image
+      run: cargo install boootimage --verbose
+      run: cargo bootimage
