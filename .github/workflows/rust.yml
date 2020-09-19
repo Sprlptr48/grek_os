@@ -26,7 +26,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose
-    - name: Boot Image Setup
-      run: cargo install boootimage --verbose --vers 0.10.1
     - name: Create Bin
       run: cargo bootimage --verbose
