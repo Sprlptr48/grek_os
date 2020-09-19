@@ -1,4 +1,4 @@
-# Grek Os
+# Grem Os
 
 [![Build Status](https://travis-ci.org/sprlptr48/grem_os.png?branch=master)](https://travis-ci.org/sprlptr48/grem_os)
 
