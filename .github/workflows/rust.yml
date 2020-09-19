@@ -14,8 +14,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
-    
+    steps:    
     - uses: actions/checkout@v2
     - name: Update
     - run: rustup update nightly --force
